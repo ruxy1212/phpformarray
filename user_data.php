@@ -26,7 +26,7 @@ $country = $_POST['country'];
 
     $_SESSION['formdata'] = $_POST; //add the posted data to server session
 
-   header('Location: tests.php'); //redirect back to form page
+   header('Location: index.php'); //redirect back to form page
    exit;
 
 ?>
