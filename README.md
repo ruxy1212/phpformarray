@@ -1,4 +1,4 @@
-# phpformarray
+# PHP Form and Array Task
 PHP Task (Array and Forms)
 A registration page to process user input from a form and save into a .csv file, then redirect back to the form page and display the user details as an array.
 
