@@ -73,6 +73,8 @@ $country = $_POST['country'];
              <?php 
              print_r($_POST); 
         ?>
+        <br>
+        <p><a href="index.php">Return back</a> to Registration page</p>
     </div>
 </body>
 </html>
