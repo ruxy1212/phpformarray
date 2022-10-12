@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -363,26 +362,6 @@
         <br>
         <button type="submit">Submit</button>
     </form>
-
-    <?php
-    if(isset($_SESSION['formdata'])){
-        $name = $_SESSION['formdata']['name'];
-        $email = $_SESSION['formdata']['email'];
-        $gender = $_SESSION['formdata']['gender'];
-        $dob = $_SESSION['formdata']['dob'];
-        $country = $_SESSION['formdata']['country'];
-         ?> <article><h3>Registration was successful!</h3>  
-            <h5>Name: <?php echo $name; ?></h5> 
-            <h5>Email: <?php echo $email; ?></h5>
-            <h5>Gender: <?php echo $gender; ?></h5>
-            <h5>Date of Birth: <?php echo $dob; ?></h5>
-            <h5>Country: <?php echo $country; ?></h5></article>      
-        <?php 
-        print_r($_SESSION['formdata']); 
-        session_unset();
-    }
-    
-    ?>
     </div>
 </body>
 </html>
