@@ -59,22 +59,23 @@ $country = $_POST['country'];
 <body>
     <div>
         <?php
+        print_r($_POST); 
              $name = $_POST['name'];
              $email = $_POST['email'];
              $gender = $_POST['gender'];
              $dob = $_POST['dob'];
              $country = $_POST['country'];
-              ?> <article><h3>Registration was successful!</h3>  
+              ?><br><br> <article><h3>Registration was successful!</h3>  
                  <h5>Name: <?php echo $name; ?></h5> 
                  <h5>Email: <?php echo $email; ?></h5>
                  <h5>Gender: <?php echo $gender; ?></h5>
                  <h5>Date of Birth: <?php echo $dob; ?></h5>
                  <h5>Country: <?php echo $country; ?></h5></article>      
              <?php 
-             print_r($_POST); 
+             
         ?>
-        <br>
-        <p><a href="index.php">Return back</a> to Registration page</p>
+        <br><br>
+        <p><a href="tests.php">Return back</a> to Registration page</p>
     </div>
 </body>
 </html>
